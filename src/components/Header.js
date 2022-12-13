@@ -5,10 +5,11 @@ const Header = () => {
   return (
     <HeaderNav>
        <div className='container'>
-       <ul>
+        <h2>CelAqui</h2>
+        <ul>
             <li><NavLink to='/'>Home</NavLink></li>
-            <li><NavLink to='/'>Login</NavLink></li>
-          </ul>
+            <li><NavLink to='/create'>create</NavLink></li>
+        </ul>
       </div>
     </HeaderNav>
   )
@@ -23,11 +24,19 @@ const HeaderNav = styled.header`
     }
     & .container {
       width: 800px;
-    margin: 90 auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    & ul {
+        display:flex;
+      & li{
+        font-size: 18x;
+         list-style-type:none;
+         margin:0 0 0 20px
+      }
     }
+  }
 `
 
 
